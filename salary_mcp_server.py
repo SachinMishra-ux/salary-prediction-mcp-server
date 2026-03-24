@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 import shap
 import numpy as np
-from openai import OpenAI
+#from openai import OpenAI
 
 # Initialize MCP Server
 mcp = FastMCP("Salary Intelligence Server")
@@ -16,7 +16,7 @@ rf_model = pipeline.named_steps["model"]
 explainer = shap.TreeExplainer(rf_model)
 
 # LLM Client
-client = OpenAI()
+#client = OpenAI()
 
 # ------------------------------
 # TOOL 1: Predict Salary
